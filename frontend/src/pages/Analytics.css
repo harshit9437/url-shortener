@@ -1,0 +1,295 @@
+.analytics-page {
+  min-height: 100vh;
+  background: #0b0d12;
+  color: #f5f5f7;
+}
+
+
+.analytics-topbar {
+  width: min(1180px, 92%);
+  margin: auto;
+  padding: 28px 0 0;
+}
+
+
+.back-button {
+  border: 1px solid #2e3140;
+  background: #13151d;
+  color: #aeb1bf;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.back-button:hover {
+  color: white;
+  border-color: #55596b;
+}
+
+
+.analytics-container {
+  width: min(1180px, 92%);
+  margin: auto;
+  padding: 55px 0 100px;
+}
+
+
+.analytics-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+
+.analytics-intro h1 {
+  font-size: 46px;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+
+.analytics-intro p {
+  color: #7c8191;
+  margin-top: 10px;
+}
+
+
+.link-preview {
+  padding: 18px 20px;
+  border: 1px solid #2b2e3b;
+  border-radius: 14px;
+  background: #12141b;
+  max-width: 430px;
+}
+
+
+.link-preview span {
+  display: block;
+  color: #777c8d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 7px;
+}
+
+
+.link-preview a {
+  color: #968aff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+/* STATS */
+
+.analytics-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+
+.big-stat {
+  padding: 28px;
+  border: 1px solid #292c39;
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      145deg,
+      #151720,
+      #101116
+    );
+}
+
+
+.big-stat span {
+  display: block;
+  color: #777c8c;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+}
+
+
+.big-stat strong {
+  display: block;
+  margin-top: 14px;
+  font-size: 38px;
+}
+
+
+.big-stat small {
+  display: block;
+  margin-top: 8px;
+  color: #686d7d;
+}
+
+
+.date-stat {
+  font-size: 18px !important;
+}
+
+
+/* GRAPH */
+
+.graph-section {
+  border: 1px solid #302d50;
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      circle at top right,
+      #211d42 0,
+      transparent 32%
+    ),
+    #101219;
+  padding: 30px;
+}
+
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.graph-header h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+
+.graph-header p {
+  margin-top: 7px;
+  color: #707586;
+  font-size: 13px;
+}
+
+
+.range-switch {
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  background: #0b0d12;
+  border: 1px solid #292c39;
+  border-radius: 10px;
+}
+
+
+.range-switch button {
+  border: 0;
+  background: transparent;
+  color: #6f7484;
+  padding: 8px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+.range-switch button.selected {
+  color: white;
+  background: #7467ff;
+}
+
+
+.chart {
+  margin-top: 30px;
+}
+
+
+.no-data {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.no-data-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: #211e42;
+  color: #8d81ff;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+
+.no-data h3 {
+  margin: 0 0 8px;
+}
+
+
+.no-data p {
+  max-width: 380px;
+  color: #696e7e;
+  line-height: 1.6;
+}
+
+
+/* DESTINATION */
+
+.destination-card {
+  margin-top: 20px;
+  padding: 28px;
+  border: 1px solid #292c39;
+  border-radius: 18px;
+  background: #12141b;
+}
+
+
+.destination-card h2 {
+  margin: 0 0 10px;
+}
+
+
+.destination-card a {
+  color: #9084ff;
+  word-break: break-all;
+}
+
+
+.analytics-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #0b0d12;
+  color: #aaaeba;
+}
+
+
+@media (max-width: 800px) {
+
+  .analytics-intro {
+    display: block;
+  }
+
+  .link-preview {
+    margin-top: 25px;
+    max-width: none;
+  }
+
+  .analytics-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .graph-header {
+    display: block;
+  }
+
+  .range-switch {
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+}
